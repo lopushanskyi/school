@@ -16,4 +16,4 @@ while answer != r3:
     answer = int(input(f'Скільки буде {r1} помножити на {r2}: '))
     continue
 else:
-    print('you won')
+    print('Ура! Ти молодець!')
