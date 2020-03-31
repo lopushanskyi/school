@@ -35,9 +35,9 @@ def run_test(questions):
         answer = input(question.prompt)
         if answer == question.answer:
             score += scoreStep
-            print('Відповідь вірна!')
+            print(f'Відповідь вірна! {question.prompt[:-2:]} = {answer}.\n')
         else:
-            print('Відповідь не вірна!')
+            print(f'Відповідь не вірна! {question.prompt[:-2:]} = {question.answer}.\n')
     print(f'Вітаю. В тебе {str(score)} очок з {str(len(questions*scoreStep))} можливих.')
 
 run_test(questions)
